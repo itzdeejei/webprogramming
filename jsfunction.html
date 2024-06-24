@@ -1,0 +1,34 @@
+<html>
+    <head> 
+        <title>Function Demo</title> 
+        <script type="text/javascript"> 
+            
+            function doNotify() {
+                document.write("This is a notification from doNotify function. <br />");
+            }
+            
+            function doCheck(val) {
+                alert("The value checked is " + val); 
+            }
+            
+            function doSum(vall, val2) { 
+                return vall+val2;
+            }
+        </script>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            doNotify();
+            doCheck(10);
+            var s = doSum(10,15); 
+            document.write("Sum of 10 and 15 is " + s +"<br />");
+        </script>
+
+        <input type="checkbox" value="Check1" onclick="doCheck(1)"/>One
+        <input type="checkbox" value="Check2" onclick="doCheck(2)"/>Two
+        <input type="checkbox" value="Check3" onclick="doCheck(3)"/>Three
+
+    </body>
+
+</html>

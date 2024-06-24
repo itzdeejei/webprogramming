@@ -1,0 +1,35 @@
+<html>
+    <head> 
+        <title>Screen and Keyboard Output</title> 
+        <script type="text/javascript"> 
+        function sayAlert() { 
+            alert("Hello World!!");
+        }
+
+        function sayConfirm() {
+            if( retVal == true ){
+                var retVal = confirm("Do you want to continue?"); 
+                document.write ("<h2>User wants to continue!</h2>"); 
+                return true;
+            }
+            else{
+                document.write ("<h2>User does not want to continue!</h2>");
+                return false;
+            }
+        }
+
+        function sayPrompt() {
+            var retVal = prompt("Enter your name : ", "your name here");
+            document.write("<h2>You have entered : " + retVal + "</h2>");
+        }
+
+        </script>
+    </head>
+
+    <body>
+        <input type="button" onclick="sayAlert()" value="Say Alert" /> 
+        <input type="button" onclick="sayConfirm()" value="Say Confirm" /> 
+        <input type="button" onclick="sayPrompt()" value="Say Prompt" />
+    </body>
+
+</html>

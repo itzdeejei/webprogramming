@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Registration Form</title>
+</head>
+<body>
+
+    <form action="http://www.registerme.com/jobregn.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" maxlength="30" required><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br>
+
+        <label>Areas of Interest:</label>
+        <input type="checkbox" id="interest1" name="interest1" value="programming">
+        <label for="interest1">Programming</label>
+        <input type="checkbox" id="interest2" name="interest2" value="design">
+        <label for="interest2">Design</label>
+        <input type="checkbox" id="interest3" name="interest3" value="data_analysis">
+        <label for="interest3">Data Analysis</label><br>
+
+        <label for="experience">Years of Experience:</label>
+        <select id="experience" name="experience">
+            <option value="0-5">0-5 years</option>
+            <option value="6-10">6-10 years</option>
+            <option value="11-15">11-15 years</option>
+            <option value="more_than_15">More than 15 years</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear Data">
+    </form>
+
+</body>
+</html>
